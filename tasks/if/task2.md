@@ -28,7 +28,6 @@
 | --- | --- |
 | 8
 [b!cvmcv" | Za bulbu! |
-| --- | --- |
 | 2020
 Jvsvuls'Y|mmz'{|yulk'v|{'{v'il'Kpl'Ohyk | Colonel Ruffs turned out to be Die Hard |
 
