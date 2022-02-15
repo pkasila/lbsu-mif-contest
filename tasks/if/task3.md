@@ -1,11 +1,11 @@
 # Task 3. Lyonya and hydrogen rocks
 
-|                        |                   |
-|------------------------|-------------------|
-| Имя входного файла     | Стандартный ввод  |
-| Имя выходного файла    | Стандартный вывод |
-| Ограничение по времени | 1 секунда         |
-| Ограничение по памяти  | 64 мегабайта      |
+|                  |        |
+|------------------|--------|
+| Input filename   | STDIN  |
+| Outfile filename | STDOUT |
+| Time limit       | 1 s    |
+| RAM limit        | 64 MB  |
 
 The future teacher of the Lyceum Lenya is very fond of the mythical hydrogen stones. Not so long ago, Lyonya found a
 field `a`

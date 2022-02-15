@@ -1,32 +1,32 @@
-# Задача 2. Подарок мечты
+# Task 2. Gift of a dream
 
-|  |  |
-| --- | --- |
-| Имя входного файла | Стандартный ввод |
-| Имя выходного файла | Стандартный вывод |
-| Ограничение по времени | 1 секунда |
-| Ограничение по памяти | 64 мегабайта |
+|                  |        |
+|------------------|--------|
+| Input filename   | STDIN  |
+| Outfile filename | STDOUT |
+| Time limit       | 1 s    |
+| RAM limit        | 64 MB  |
 
-Какой самый лучший подарок мужчине на 23 февраля? Один из легендарных и влиятельных представителей этого пола,
-полковник Пиктор Вавлович, просто обожает виски и последовательности an, где элемент под номером N – средний балл
-всех оценок за этот день.
+What is the best gift for a man on February 23rd? One of the legendary and influential representatives of this sex,
+Colonel Piktor Vavlovich, simply loves whiskey and sequences an, where the element numbered N is the average score
+all grades for that day.
 
-Последовательность an строится следующим образом: a1 = 0, к существующей последовательности в конец приписывается
-она же, и каждый приписываемый элемент увеличивается на 1 по модулю k (к примеру, при k = 3, последовательность
-выглядит следующим образом: 0  01  0112  01121220 ...).
+The sequence an is constructed as follows: a1 = 0, the existing sequence is appended to the end
+it is the same, and each attributed element is increased by 1 modulo k (for example, with k = 3, the sequence
+looks like this: `0 -> 01 -> 0112 -> 01121220 -> ...`).
 
-Сделайте подарок Пиктора Вавловича приятным! Составьте алгоритм, который по введенному N и k,
-(1 ≤ N ≤ 1018, 2 ≤ k ≤ 100) определяет, какое число стоит на N-ом месте в последовательности.
+Make Piktor Vavlovich's gift a pleasant one! Make up an algorithm that, given the input N and k,
+(1 ≤ N ≤ 1018, 2 ≤ k ≤ 100) determines which number is in the Nth place in the sequence.
 
-## Формат входного файла
+## Input file format
 
-Программе даны два числа (1 ≤ N ≤ 1018, 2 ≤ k ≤ 100).
+The program is given two numbers (1 ≤ N ≤ 1018, 2 ≤ k ≤ 100).
 
-## Формат выходного файла
+## Output file format
 
-Вывести число, стоящее на N-ой позиции в данной последовательности.
+Print the number at the Nth position in the given sequence.
 
-## Примеры
+## Examples
 
 | `input.txt`           | `output.txt` |
 |-----------------------|--------------|
@@ -34,24 +34,25 @@
 | <pre>12 2</pre>       | <pre>1</pre> |
 | <pre>12345678 9</pre> | <pre>3</pre> |
 
-## Пояснения к примерам
-В первом примере последовательность выглядит так:
+## Notes
+
+In the first example, the sequence looks like this:
 
 0112122312232334
 
-12-ый элемент равняется 3.
+The 12th element is 3.
 
-Во втором примере:
+In the second example:
 
 0110100110010110
 
-12-ый элемент равняется 1.
+The 12th element is 1.
 
-## Тестирование
+## Testing
 
-1 группа тестов – 1 ≤ N ≤ 1e6 – 20 баллов
+1 group of tests - 1 ≤ N ≤ 1e6 - 20 points
 
-2 группа тестов – 1 ≤ N ≤ 1e8 – 10 баллов
+Group 2 tests - 1 ≤ N ≤ 1e8 - 10 points
 
-3 группа тестов – без дополнительных ограничений – 70 баллов
+Group 3 tests - no additional restrictions - 70 points
 

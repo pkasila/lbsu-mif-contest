@@ -1,23 +1,27 @@
-# Задача 1. Алинад и слойка
+# Problem 1. Alinade and puff
 
-|  |  |
-| --- | --- |
-| Имя входного файла | Стандартный ввод |
-| Имя выходного файла | Стандартный вывод |
-| Ограничение по времени | 1 секунда |
-| Ограничение по памяти | 64 мегабайта |
+|                  |        |
+|------------------|--------|
+| Input filename   | STDIN  |
+| Outfile filename | STDOUT |
+| Time limit       | 1 s    |
+| RAM limit        | 64 MB  |
 
-Алинад пришел в столовую, чтобы как обычно купить себе слойку. У продавщицы есть слойка весом `М` и гирьки весом `1, 3, 9 ... 3^k` грамм. Чтобы получить слойку бесплатно, Алинаду надо уравновесить слойку на весах. Алинад очень хочет просто купить слойку, но он уже потратил все деньги на тренажёрный зал и очень устал. Помогите ему найти те гирьки, которые будут лежать рядом со слойкой, и те, которые будут лежать на другой чаше весов.
+Alinad came to the dining room to buy himself a puff as usual. The saleswoman has a puff weighing `M` and weights
+weighing `1, 3, 9 ... 3^k` grams. To get a puff for free, Alinad must balance the puff on the scales. Alinad really
+wants to just buy a puff, but he has already spent all the money on the gym and is very tired. Help him find those
+weights that will lie next to the puff, and those that will lie on the other side of the scale.
 
-## Формат входного файла
+## Input file format
 
-Программе дано число `M` (`1 ≤ M ≤ 10^6`).
+The program is given a number `M` (`1 ≤ M ≤ 10^6`).
 
 ## Формат выходного файла
 
-Выведите в первой строке веса гирь, которые нужно положить к `M`, а в другой те, которые нужно положить на другую чашу весов. Значения масс выводятся в порядке убывания(!).
+Print in the first line the weights of the weights to be placed next to `M`, and in the other line the weights to be
+placed on the other bowl scales. Mass values are displayed in descending order(!).
 
-## Примеры
+## Examples
 
 | `input.txt`  | `output.txt`                           |
 |--------------|----------------------------------------|

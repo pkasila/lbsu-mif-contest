@@ -1,52 +1,54 @@
-# Задача 2. Генерал Гавс
+# Task 2. General Gavs
 
-|  |  |
-| --- | --- |
-| Имя входного файла | Стандартный ввод |
-| Имя выходного файла | Стандартный вывод |
-| Ограничение по времени | 1 секунда |
-| Ограничение по памяти | 64 мегабайта |
+|                  |        |
+|------------------|--------|
+| Input filename   | STDIN  |
+| Outfile filename | STDOUT |
+| Time limit       | 1 s    |
+| RAM limit        | 64 MB  |
 
-Звуки, слившиеся в оглушительный вой, захватили воздух. Беспроглядная тьма, граничащая с озверевшим пламенем,
-безжалостно поглощала все на своем пути. Момент, когда каждая никчемная мелочь врезается в память… И тьма…
+The sounds that merged into a deafening howl filled the air. Impenetrable darkness, bordering on a brutal flame,
+ruthlessly consumed everything in its path. The moment when every worthless little thing cuts into memory ... And
+darkness ...
 
-– Генерал… Генерал, очнитесь, генерал Гавс… Врача, врача срочно
+- General ... General, wake up, General Gavs ... Doctor, doctor urgently
 
-…Назойливая белизна лазарета разъедает глаза своей безучастностью и отстраненностью. Вас охватывает вихрь воспоминаний.
+... The intrusive whiteness of the infirmary corrodes the eyes with its indifference and detachment. You are engulfed in
+a whirlwind of memories.
 
-Вы ведете левый фланг космических войск в бой… Взрывы, стрельба. Это был неравный бой… Правый фланг бежал, и оставил
-вас без прикрытия… Абордаж...  Картофельный генералиссимус Бульбаш… Корабль захвачен… Кто-то скандирует “ЗА-БУЛЬ-БУ”...
-Рукопашный бой… Резервная флотилия вступила в сражение… Враг отступает, поджигая корабль... Взрыв… Оглушительный звук…
-Тьма… Лазарет
+You are leading the left flank of the space troops into battle... Explosions, shooting. It was an unequal battle ... The
+right flank fled, and left you without cover ... Boarding ... Potato Generalissimo Bulbash ... The ship is captured ...
+Someone is chanting “FOR-BUL-BU” ... Hand-to-hand combat... The reserve flotilla has entered the battle... The enemy
+retreats, setting fire to the ship... An explosion... A deafening sound... Darkness… Infirmary
 
-Вы берете письмо, лежащее на вашей кровати. “...За всю историю борьбы с инопланетянами коммунистами-бульбашистами это
-было величайшее сражение… Генерал Гавс, за проявленную стойкость и мужество Вы назначаетесь верховным главнокомандующим
-Силами Сопротивления…
+You take the letter from your bed. “... In the entire history of the fight against aliens by communist bulbashists, this
+it was the greatest battle ... General Gavs, for your stamina and courage, you are appointed supreme commander Forces of
+Resistance...
 
-Для выполнения поставленной задачи Вам необходимо перехватить и дешифровать переговоры генералиссимуса Бульбаша с КГБ
-(космической гвардией Бульбы).  Разведка доложила, что для шифровки применяется инопланетный шифр Цезаря, где каждый
-символ сдвигается на an mod 3 вправо. Где n – число полных лет войны. an задается последовательностью: первый элемент 0, затем
-уже написанную часть приписывают справа, прибавляя к каждому элементу 1.
+To complete the task, you need to intercept and decipher the conversations of Generalissimo Bulbash with the KGB
+(Bulba's space guard). Intelligence reported that an alien Caesar cipher is used for encryption, where each the symbol
+is shifted an mod 3 to the right. Where n is the number of full years of war. an is given by the sequence: the first
+element is 0, then the already written part is attributed to the right, adding 1 to each element.
 (0) -> (0, 1) -> (0, 1, 1, 2) -> (0, 1, 1, 2, 1, 2, 2, 3).”
 
-## Формат входного файла
+## Input file format
 
-Программе дано целое число лет войны n (1 <= n <= 10000). И перехваченное с помощью радио P-354 “Шмель”
-сообщение строка s (1 <= s <= 10000)
+The program is given an integer number of war years n (1 <= n <= 10000). And a message intercepted using the P-354 “Bumblebee” radio line
+s (1 <= s <= 10000)
 
-## Формат выходного файла
+## Output file format
 
-Вывести латиницей дешифрованное сообщение.
+Output the decrypted message using ASCII.
 
-## Примеры
+## Examples
 
-| `input.txt`                 | `output.txt` |
-|-----------------------------|--------------|
-| <pre>8<br>[b!cvmcv"</pre>   | <pre>Za bulbu!</pre> |
-| <pre>2020<br>Jvsvuls'Y&#124;mmz'{&#124;yulk'v&#124;{'{v'il'Kpl'Ohyk</pre> | <pre>Colonel Ruffs turned out to be Die Hard</pre>  |
+| `input.txt`                                                               | `output.txt`                                       |
+|---------------------------------------------------------------------------|----------------------------------------------------|
+| <pre>8<br>[b!cvmcv"</pre>                                                 | <pre>Za bulbu!</pre>                               |
+| <pre>2020<br>Jvsvuls'Y&#124;mmz'{&#124;yulk'v&#124;{'{v'il'Kpl'Ohyk</pre> | <pre>Colonel Ruffs turned out to be Die Hard</pre> |
 
-## Примечание
+## Note
 
 0 1 1 2 1 2 2 3 1 2 2 3 2 2 3 3 4
 
-Восьмой элемент – 1, соответственно для расшифровки нужно сдвигать на 1 элемент влево. [ -> Z, b -> a и т.д
+The eighth element is 1, respectively, to decrypt it, you need to shift 1 element to the left. [ -> Z, b -> a, etc.
