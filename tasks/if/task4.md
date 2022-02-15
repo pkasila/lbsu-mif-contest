@@ -1,36 +1,36 @@
-# Задача 4. Резьба по дереву
+# Task 4. Woodcarving
 
-|  |  |
-| --- | --- |
-| Имя входного файла | Стандартный ввод |
-| Имя выходного файла | Стандартный вывод |
-| Ограничение по времени | 1 секунда |
-| Ограничение по памяти | 64 мегабайта |
+|                  |        |
+|------------------|--------|
+| Input filename   | STDIN  |
+| Outfile filename | STDOUT |
+| Time limit       | 1 s    |
+| RAM limit        | 64 MB  |
 
-Опытный программист Винцук исправлял ошибки после джуна. Он был известным языковедом, поэтому безусловно осилил эту
-задачу, но не уберёг себя от выгорания.
+Experienced programmer Vintsuk fixed bugs after June. He was a famous linguist, so he certainly mastered this task, but
+did not save himself from burnout.
 
-Врач посоветовал ему поехать в санаторий и заняться ручным ремеслом. Винцук решил начать со второго. Ему с детства
-хотелось заниматься резьбой по дереву. Он нашёл палку длиной 1 метр, купил очень тонкий резец и начал думать
-относительно узора. Винцук был программистом до мозга костей, поэтому решил, что вырезать узоры он будет следующим
-образом:
+The doctor advised him to go to a sanatorium and take up handicrafts. Vintsuk decided to start with the second one. Him
+since childhood I wanted to do wood carving. He found a stick 1 meter long, bought a very thin chisel and began to think
+regarding the pattern. Vintsuk was a programmer to the core, so he decided that he would be next to cut patterns way:
 
-Палку он разделил на 5 равных частей. На 2ой и 4ой частях он решил ничего не вырезать. Каждую оставшуюся часть (1ую,3ю и
-5ую) он также разделил на пять равных подчастей и решил оставить нетронутыми 2ую и 4ую подчасти каждой части. Всего
-таких делений он сделал n, после чего по разметке начал вырезать узоры.
-  
-Подскажите Винцуку, зная n, будет ли узор в точке палки с координатой х. Резец у Винцука очень тонкий и может резать
-палку на пико уровне, начало палки – начало координат и равно нулю. Конец палки равен единице.
+He divided the stick into 5 equal parts. On the 2nd and 4th parts, he decided not to cut anything. Each remaining part (
+1st, 3rd and 5th) he also divided into five equal subparts and decided to leave intact the 2nd and 4th subparts of each
+part. Total he made n such divisions, after which he began to cut patterns according to the markup.
 
-## Формат входного файла
+Tell Vintsuk, knowing n, whether there will be a pattern at the point of the stick with coordinate x. Vintsuk's incisor
+is very thin and can cut stick at the pico level, the origin of the stick is the origin and is equal to zero. The end of
+the stick is equal to one.
 
-Числа n(0 <= n <=10), x(0 < x <= 1).
+## Input file format
 
-## Формат выходного файла
+Numbers n(0 <= n <=10), x(0 < x <= 1).
 
-Вывести «donot_touch» если точка не должна содержать резьбы. Вывести «cut», если точка должна содержать резьбу.
+## Output file format
 
-## Примеры
+Output "donot_touch" if the point should not contain a thread. Output "cut" if the point should contain a thread.
+
+## Examples
 
 | `input.txt` | `output.txt` |
 | --- | --- |
@@ -40,16 +40,16 @@
 | 2 0.041 | donot_touch |
 | 2 0.04 | cut |
 
-## Пояснения к примеру 1:
+## Note for example 1:
 
-Разделим на 5 частей палку. Первый диапазон (0,0.2], второй – (0.2,0.4], третий – (0.4,0.6], четвертый – (0.6,0.8],
-пятый – (0.8,1]. Наш точка попадает в третий, т.е. на ней будет вырезан узор.
+Divide the stick into 5 parts. The first range is (0,0.2], the second - (0.2,0.4), the third - (0.4,0.6), the fourth - (
+0.6,0.8), fifth - (0.8,1]. Our point falls into the third, i.e. a pattern will be cut out on it.
 
-## Пояснения к примеру 2:
+## Note for example 2:
 
-Разделим на 5 частей палку, как в первом примере. Далее на пять равных частей по аналогичному принципу делятся первый,
-третий и пятый диапазоны. Рассмотрим деление первого диапазона (0,0.2]:
+Let's divide the stick into 5 parts, as in the first example. Further, the first is divided into five equal parts
+according to a similar principle, third and fifth bands. Consider dividing the first range (0,0.2]:
 
-Первый новый поддиапазон (0,0.04], второй – (0.04,0.08], третий – (0.08,0.12], четвертый – (0.12,0.16], пятый – (
-0.16,0,2]. Наша искомая точка попадает в второй, т.е. на ней НЕ будет вырезан узор
+The first new subrange is (0,0.04], the second - (0.04,0.08), the third - (0.08,0.12), the fourth - (0.12,0.16), the
+fifth - (0.16,0.2]. Our desired point falls into the second, i.e. it will NOT have a pattern cut out
 

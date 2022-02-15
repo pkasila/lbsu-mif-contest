@@ -1,36 +1,37 @@
-# Задача 4. Совет лицеистов
+# Task 4. Lyceum Council
 
-|  |                   |
-| --- |-------------------|
-| Имя входного файла | Стандартный ввод  |
-| Имя выходного файла | Стандартный вывод |
-| Ограничение по времени | 2 секунды         |
-| Ограничение по памяти | 64 мегабайта      |
+|                  |        |
+|------------------|--------|
+| Input filename   | STDIN  |
+| Outfile filename | STDOUT |
+| Time limit       | 2 s    |
+| RAM limit        | 64 MB  |
 
-В совет лицеистов поступает множество предложений. Часто их накапливается настолько много, что их просто невозможно
-рассмотреть за один день. В таком случае все предложения делят на три равные группы и рассматривают все предложения из
-второй, не включая “граничные” предложения. На следующий день то же самое выполняют для каждой из оставшихся групп (
-новые промежутки получаются разбиением старых на три равные части). Данные действия повторяются до тех пор, пока все
-предложения не будут рассмотрены.
+The Lyceum Council receives a lot of proposals. Often there are so many of them that it is simply impossible to review
+in one day. In this case, all proposals are divided into three equal groups and all proposals from the second, not
+including “boundary” sentences. The next day, the same is done for each of the remaining groups (
+new intervals are obtained by dividing the old ones into three equal parts). These steps are repeated until all
+proposals will not be considered.
 
-Лицеист Сергей Санчук из 10 «ИМ» обожает играть в настольный тенис и крайне недоволен тем, что после окончания пар
-тенисные столы убирают. В надежде остановить этот беспредел Серёжа отправил предложение в совет лицеистов и теперь ждёт
-не дождётся итогов рассмотрения.
+Lyceist Sergey Sanchuk from 10 "IM" loves to play table tennis and is extremely dissatisfied with the fact that after
+tennis tables are being removed. In the hope of stopping this lawlessness, Serezha sent a proposal to the Council and
+is now waiting can't wait for the outcome of the review.
 
-Сережа знает, что если разбить все предложения на B отрезков, его будет находиться в начале A-того. Помогите Серёже
-узнать, будет ли рассмотрено его предложение через X дней, если предложений достаточно для того, чтобы их рассматривать
-бесконечное количество дней.
+Serezha knows that if all sentences are divided into B segments, his sentence will be at the beginning of the A-th one.
+Help Serezha find out if his proposal will be considered in X days, if there are enough proposals to be considered an
+infinite number of days.
 
-## Формат входного файла
+## Input file format
 
-Программе даны три числа: A, B (0 <= A, B <= 10^6) – номер отрезка, в начале которого находится предложение
-их количество, а также X (1 <= X <= 10^6) – день в который Сережа хочет узнать статус своего предложения.
+The program is given three numbers: A, B (0 <= A, B <= 10^6) - the number of the segment at the beginning of which the
+sentence is located their number, as well as X (1 <= X <= 10^6) – the day on which Serezha wants to know the status of
+his offer.
 
-## Формат выходного файла
+## Output file format
 
-Вывести “YES”, если предложение будет рассмотрено и “NO” в обратном случае.
+Output "YES" if the proposal will be considered and "NO" otherwise.
 
-## Примеры
+## Examples
 
 | `input.txt` | `output.txt` |
 |-------------|--------------|
