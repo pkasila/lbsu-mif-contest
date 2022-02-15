@@ -1,4 +1,4 @@
-# Задача 3. Лёня и камни водороды
+# Task 3. Lyonya and hydrogen rocks
 
 |                        |                   |
 |------------------------|-------------------|
@@ -7,35 +7,37 @@
 | Ограничение по времени | 1 секунда         |
 | Ограничение по памяти  | 64 мегабайта      |
 
-Будущий преподаватель Лицея Лёня очень любит мифические камни водороды. Не так давно Лёня нашел поле `a`
-размером `n x n` с кем-то оставленными мифическими камнями. На каждом камне был написан номер строки и столбца, в
-котором он находится. Тогда, если `i` – номер строки, `j` – номер столбца, то Лёня напишет на камне (`i`, `j`) число
-равное `i ^ j` (нумерация с нуля). Лёня стал играть с записанными числами, он придумал много разных игр, но потом ему
-стало скучно, и он начал придумывать вопросы, на которые сам и отвечал. Вскоре он нашел вопрос, на который он не может
-ответить, и просит помощи у вас.
+The future teacher of the Lyceum Lenya is very fond of the mythical hydrogen stones. Not so long ago, Lyonya found a
+field `a`
+with size `n x n` with hydrogen rocks left there. Each stone was inscribed with a row and column number, in which it's
+located. Sequentially, if `i` – rows index, `j` – columns index, then Lyonya will write on the rock (`i`, `j`) number
+equal to `i ^ j` (numeration starts with `0`). Lyonya began to play with the numbers written down, he came up with many
+different games, but then he got bored, and he began to come up with questions that he himself answered. Soon he found a
+question he couldn't answer and asks you for help.
 
-Лёню интересует у скольких среди n×n записанных чисел `p`-ый бит равен единице. Он просит у вас помощи q раз, каждый
-раз, говоря вам разные `p` и `n`.
+Lyonya is interested in how many of the n×n written numbers have the `p`-th bit equal to one. He asks you for help q
+times, each times, telling you different `p` and `n`.
 
-Сможете ли вы помочь Лёне ответить на интересующие его вопросы?
+Can you help Lyonya answer his questions?
 
-## Формат входного файла
+## Input file format
 
-В первой строке входных данных записано целое число `q` (`1 ≤ q ≤ 10^5`):
+The first line of the input contains an integer `q` (`1 ≤ q ≤ 10^5`):
 
-В `i`-ой из последующих `q` строк записаны два целых числа `n`, `p` (`1 ≤ n ≤ 10^18`, `1 ≤ p ≤ 64`)
+The `i`-th of the following `q` lines contains two integers `n`, `p` (`1 ≤ n ≤ 10^18`, `1 ≤ p ≤ 64`)
 
-## Формат выходного файла
+## Output file format
 
-Выведите `q` строк: в `i`-ой из них выведите единственное число – остаток от деления ответа на `i`-ый вопрос Лёни
-на `1000000007`.
+Print `q` lines: in the `i`-th of them print a single number - the remainder after dividing the answer to Lyonya's `i`
+-th question to `1000000007`.
 
-## Примеры
+## Example
 
 | `input.txt`                       | `output.txt`           |
 |-----------------------------------|------------------------|
 | <pre>3<br>1 1<br>2 1<br>3 2</pre> | <pre>0<br>2<br>4</pre> |
 
-## Примечание
+## Note
 
-В третьем запросе будут выписаны числа `[0, 1, 2, 1, 0, 3, 2, 3, 0]`. 2-ой бит равен единице у чисел `[2, 3, 2, 3]`.
+The third query will list the numbers `[0, 1, 2, 1, 0, 3, 2, 3, 0]`. The 2nd bit is equal to one for the
+numbers `[2, 3, 2, 3]`.
