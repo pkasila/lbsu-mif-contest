@@ -1,5 +1,10 @@
 # Contest "Algorithms of integer arithmetic"
 
+These are the tasks given to the Computer Science majors in the Lyceum BSU.
+
+There was a group assignment for lyceists to create their own contest tasks to be included in the unified Contests
+for both 10IM and 10IPh. There are tasks and solutions for them.
+
 ## Tasks
 
 | #   | Task 10IM                      | Solution 10IM                                                                                                                                                                                                                                 | Task 10IPh                      | Solution 10IPh                                                                                                                                                                                                                             |
