@@ -13,7 +13,7 @@ int main() {
     string s;
     getline(fin, s);
     bitset<32> b(n);
-    int key = b.count();
+    int key = b.count()%3;
     for (int i = 0; i < s.size(); i++) {
         s[i] -= key;
     }

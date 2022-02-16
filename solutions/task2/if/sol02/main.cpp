@@ -19,7 +19,7 @@ int32_t main() {
     }
     string s;
     fin >> s;
-    n = v[n];
+    n = v[n]%3;
     for (char &it: s)
         it -= n;
     fout << s;
